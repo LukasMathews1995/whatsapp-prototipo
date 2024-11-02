@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clItemConversa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgConversasFoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/Circulo"
+        app:srcCompat="@drawable/perfil" />
+
+    <TextView
+        android:id="@+id/textConversasNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Nome"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textConversaMensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgConversasFoto"
+        app:layout_constraintTop_toTopOf="@+id/imgConversasFoto" />
+
+    <TextView
+        android:id="@+id/textConversaMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Ultima Mensagem"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgConversasFoto"
+        app:layout_constraintEnd_toEndOf="@+id/textConversasNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textConversasNome" />
+</androidx.constraintlayout.widget.ConstraintLayout>
